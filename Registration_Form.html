@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.centered-form {
+			margin-top: 60px;
+		}
+
+		.centered-form .panel {
+			background: rgba(255, 255, 255, 0.8);
+			border: 2px solid darkgrey;
+		}
+
+		.acount-sign {
+			background: #63738a;
+			width: 100%;
+			margin: 0;
+			color: #fff;
+			width: 100%;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.heading {
+			text-align: center;
+			font-size: small;
+			color: gray;
+			margin-bottom: 22px;
+		}
+
+		.panel-body {
+			background: antiquewhite;
+		}
+
+		.checkbox_style {
+			width: 0%;
+		}
+
+		.text {
+			width: 85%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row centered-form">
+			<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title" style="text-align: center;">Register</h3>
+					</div>
+					<div class="panel-body">
+
+						<div>
+							<p class="heading">Create your account. It's free and only takes a minute.</p>
+						</div>
+
+						<form role="form">
+							<div class="row">
+								<div class="col-xs-6 col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="text" name="first_name" id="first_name"
+											class="form-control input-sm" placeholder="First Name">
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-6">
+									<div class="form-group">
+										<input type="text" name="last_name" id="last_name" class="form-control input-sm"
+											placeholder="Last Name">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="email" name="email" id="email" class="form-control input-sm"
+									placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" id="password" class="form-control input-sm"
+									placeholder="Password">
+							</div>
+							<div class="form-group">
+								<input type="password" name="password_confirmation" id="password_confirmation"
+									class="form-control input-sm" placeholder="Confirm Password">
+							</div>
+							<div class="row">
+								<div class="col-xs-5 checkbox_style">
+									<div class="form-group">
+										<input type="checkbox">
+									</div>
+								</div>
+								<div class="col-xs-5 text">
+									<div>
+										<p style="color: black;">I accept the <a href="">Terms Of Use</a> & <a
+												href="">Privacy Policy</a></p>
+									</div>
+								</div>
+							</div>
+							<input type="submit" value="Register Now" class="btn btn-info btn-block">
+							<div>
+						</form>
+					</div>
+				</div>
+				<div>
+					<p class="acount-sign">Already have an account? Sign In</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
